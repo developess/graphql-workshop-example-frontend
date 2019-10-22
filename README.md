@@ -62,7 +62,7 @@ There's more than one way to skin a fish, and there's also plenty of ways to que
 
 Create a new file for your query component - I've called it `Addresses.js` as I'm querying for addresses.
 
-Import react, `gql` and `useQuery`.
+Import `React`, `gql` and `useQuery`.
 
 ```js
 import React from "react";
@@ -109,7 +109,7 @@ export const Addresses = () => {
 };
 ```
 
-All that's left to do is export your component and import it and use it in `index.js`
+All that's left to do is import and use the Addresses component in `index.js`
 
 Thats it! Run your app and check it out in the browser, see if you can see your addresses :)
 
