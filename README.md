@@ -1,4 +1,6 @@
-# Steps to building this repo
+# Example GraphQL Frontend
+
+## Steps to recreate the basic react app
 
 1. Create repo
 
@@ -66,4 +68,4 @@ render(<App />, document.getElementById("app"));
 },
 ```
 
-6. Start server and check its working! Should be visible on `localhost:1234`
+7. Start server and check its working! Should be visible on `localhost:1234`
