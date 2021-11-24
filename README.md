@@ -1,12 +1,32 @@
 # Example React/GraphQL Frontend
 
-This is a partner frontend to the GraphQL-Workshop repo [here](https://github.com/developess/GraphQL-Workshop) where you build an elixir graphql server, but it can be used in its own right as an example apollo implementation.
+This is a partner frontend to the GraphQL-Workshop repo [here](https://github.com/developess/GraphQL-Workshop) where you build an Elixir graphql API, but it can be used in its own right as an example Apollo implementation.
 
-To run the backend from the elixir workshop, make sure you've checked out the `my-first-complete-api` branch and run the server with the command `mix phx.server`.
+**To run the backend from the elixir workshop**, make sure you've checked out the `my-first-complete-api` branch and run the server with the command `mix phx.server`.
+
+**To run this app:**
+
+Ensure you have [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable) installed
+
+Install the dependencies
+
+```
+yarn install
+```
+
+Start the front-end:
+
+```
+yarn start
+```
+
+Navigate to `http://localhost:1234` to see the app render the data from your GraphQL API!
+
+Below you'll find a breakdown of how this app was created step by step.
 
 ## Creating a basic Apollo GraphQL connection in a react app
 
-These steps assume you have a basic React App set up. If you don't, there are instructions at the bottom of this readme to create one.
+These steps assume you have a basic React App set up. If you don't, there are instructions at the bottom of this readme to create one. It also requires yarn (which is an npm alternative, see above).
 
 ### Step 1 - Add dependencies
 
@@ -27,7 +47,7 @@ Then, create your client, providing the endpoint for your backend graphql server
 
 ```js
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:4000/graphql",
 });
 ```
 
@@ -42,7 +62,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/graphql"
+  uri: "http://localhost:4000/graphql",
 });
 
 const App = () => (
